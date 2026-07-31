@@ -11,7 +11,13 @@
 // count how many times you can do that before reaching 0.
 
 function countDigits(n) {
-  // TODO: replace this with your implementation
+  let num = Math.abs(n);
+  let count = 0;
+  do {
+    count++;
+    num = Math.floor(num / 10);
+  } while (num > 0);
+  return count;
 }
 
 // --- Tests (do not edit) ---
